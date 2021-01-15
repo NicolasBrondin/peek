@@ -80,4 +80,4 @@ Project Link: [https://github.com/NicolasBrondin/peek](https://github.com/Nicola
 [license-url]: https://github.com/NicolasBrondin/peek/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: docs/cover.jpg
+[product-screenshot]: docs/cover.png
