@@ -11,9 +11,21 @@ rl.on("close", function() {
 });
 
 (async () => {
+
   let peek = new ScreenshotManager();
-  await peek.init();
+
+  await peek.init(function(){
+      console.log("[INIT] Screenshot manager loaded successfully!");
+  }, function(path){
+      console.log("[SCREENSHOT] Image saved to:", path);
+  }, function(url){
+    console.log("[PAGE] Page", url,"loading...");
+  }, function(url){
+    console.log("[PAGE] Page", url,"loaded !");
+  });
+
   console.log("Peek is a tool to generate screenshot of a website using custom options !");
+
   let domainName = await rl.questionAsync("Domain name ? (no trailing slashes) \n");
   let urls = [];
   let url = "";
